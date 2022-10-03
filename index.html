@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>String Duplication</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>String Duplication</h1>
+        <div style="border: 1pt; border-style: solid; padding: 20pt">
+        <input v-model="word1" placeholder="Type letters or a word" type="text" id="word1">
+        <input v-model="number1" placeholder="Type a number" type="number" id="number1">
+        <button @click="DoIt" id="DoItButton">Do It!</button>
+        <span id="result" v-for="n in number1">{{result}}</span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
